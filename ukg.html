@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKG</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .image-container {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 200px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-container p {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .image-container a {
+            text-decoration: none;
+        }
+
+        /* Button Styling */
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .image-container {
+                width: 90%;
+            }
+
+            button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to UKG</h1>
+    </header>
+    <div class="gallery">
+       
+        <div class="image-container">
+            <a href="https://davbistupur.org/File/6704/UKG.pdf" target="_blank">
+                <img src="U1.png" alt="A to Z Words">
+                <p>UKG WORK BOOK</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://static.qumath.in/static/website/old-cdn-static/multiplication-tables-from-1-to-30.pdf" target="_blank">
+                <img src="u8.png" alt="A to Z Words">
+                <p>table book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://childrenchoice.in/app/monopoly/c/math/mobile/index.html" target="_blank">
+                <img src="U4.png" alt="Kannada Letters">
+                <p>SIMPLE MATHS</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://childrenchoice.in/app/monopoly/c/english/mobile/index.html" target="_blank">
+                <img src="U5.png" alt="Kannada Letters">
+                <p>SIMPLE ENGLISH</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://www.spmpublicschool.com/wp-content/uploads/2020/05/Nursery-Rhymes-Book.pdf" target="_blank">
+                <img src="u9.png" alt="A to Z Words">
+                <p>Rhymes book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://childrenchoice.in/app/monopoly/c/hindi/mobile/index.html" target="_blank">
+                <img src="U6.png" alt="Kannada Letters">
+                <p>SIMPLE HINDI</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://childrenchoice.in/app/monopoly/c/rhymes/mobile/index.html" target="_blank">
+                <img src="U3.png" alt="Kannada Letters">
+                <p>RHYMES</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://childrenchoice.in/app/monopoly/c/table/mobile/index.html" target="_blank">
+                <img src="U2.png" alt="Kannada Letters">
+                <p>TABLE BOOK</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://www.kristujyotikg.com/wp-content/uploads/2017/04/UKG-maths.pdf" target="_blank">
+                <img src="U7.png" alt="Kannada Letters">
+                <p>WORK BOOK</p>
+            </a>
+        </div>
+    </div>
+    <main>
+        <button onclick="goBack()">Go Back</button>
+    </main>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

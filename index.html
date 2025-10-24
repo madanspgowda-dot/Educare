@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Standards</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #0077b6, #00b4d8);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 1rem;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            background: #023e8a;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0 0.5rem;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #0077b6;
+        }
+
+        /* Main Section */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .standard {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .standard:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .standard img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .standard p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0077b6;
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #023e8a;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                padding: 0.3rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our School</h1>
+        <p>Select a standard to learn more</p>
+        <nav>
+            <!-- YouTube Video Button -->
+        <a href="youtube.html" class="video-button">Watch Video</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback_form.html">Feedback</a>
+            <a href="https://www.instagram.com/cit_engineers_mandya/" target="_blank">
+                <img src="insta.jpg" alt="Instagram Profile" style="width:30px; height:30px;">
+            </a>  
+            <a href="https://wa.me/qr/VNYUGV6TOA7KP1" target="_blank">
+                <img src="WhatsApp.svg.webp" alt="Instagram Profile" style="width:30px; height:30px;">
+            </a>            
+        </nav>
+    </header>
+    <main>
+        <div class="grid">
+            <div class="standard" onclick="navigate('lkg.html')">
+                <img src="lkg.png" alt="LKG">
+                <p>LKG</p>
+            </div>
+            <div class="standard" onclick="navigate('ukg.html')">
+                <img src="ukg.png" alt="UKG">
+                <p>UKG</p>
+            </div>
+            <div class="standard" onclick="navigate('standard1.html')">
+                <img src="1st.jpg" alt="Standard 1">
+                <p>Standard 1</p>
+            </div>
+            <div class="standard" onclick="navigate('standard2.html')">
+                <img src="2nd.avif" alt="Standard 2">
+                <p>Standard 2</p>
+            </div>
+            <div class="standard" onclick="navigate('standard3.html')">
+                <img src="3rd.jpg" alt="Standard 3">
+                <p>Standard 3</p>
+            </div>
+            <div class="standard" onclick="navigate('standard4.html')">
+                <img src="4th.avif" alt="Standard 4">
+                <p>Standard 4</p>
+            </div>
+            <div class="standard" onclick="navigate('standard5.html')">
+                <img src="5th.png" alt="Standard 5">
+                <p>Standard 5</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Our School. All Rights Reserved.
+    </footer>
+
+    <script>
+        // JavaScript function for navigation
+        function navigate(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

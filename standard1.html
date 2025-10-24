@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Standard</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .image-container {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 200px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-container p {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .image-container a {
+            text-decoration: none;
+        }
+
+        /* Button Styling */
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .image-container {
+                width: 90%;
+            }
+
+            button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to 1st Standard</h1>
+    </header>
+    <div class="gallery">
+        <div class="image-container">
+            <a href="1st Std Nalikali - Kannada (Part-1) (2024-25) Final.pdf" target="_blank">
+                <img src="1k1.png" alt="A to Z Words">
+                <p>1st Std Nalikali - Kannada (Part-1)</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="1st Std Nalikali - Kannada (Part-2) (2024-25) Final.pdf" target="_blank">
+                <img src="1k2.png" alt="Kannada Letters">
+                <p>1st Std Nalikali - Kannada (Part-2)</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="1st Std Eng Nalikali Part - 1 Work Book color.pdf" target="_blank">
+                <img src="1e1.png" alt="Kannada Letters">
+                <p>1st Std Eng Nalikali Part - 1</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="1st Std Eng Nalikali Part - 2 Work Book (colour).pdf" target="_blank">
+                <img src="1e2.png" alt="Kannada Letters">
+                <p>1st Std Eng Nalikali Part - 2</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="media_to_upload1719400359.pdf" target="_blank">
+                <img src="1m1.png" alt="Kannada Letters">
+                <p>1st Std maths Part - 1</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="media_to_upload1719400404.pdf" target="_blank">
+                <img src="1m2.png" alt="Kannada Letters">
+                <p>1st Std maths Part - 2</p>
+            </a>
+        </div>
+    </div>
+    <main>
+        <button onclick="goBack()">Go Back</button>
+    </main>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

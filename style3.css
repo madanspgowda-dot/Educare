@@ -1,0 +1,11 @@
+.about-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}

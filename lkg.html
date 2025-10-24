@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKG</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .image-container {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 200px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-container p {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .image-container a {
+            text-decoration: none;
+        }
+
+        /* Button Styling */
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .image-container {
+                width: 90%;
+            }
+
+            button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to LKG</h1>
+    </header>
+    <div class="gallery">
+        
+        <div class="image-container">
+            <a href="https://www.nj.gov/911/kids/book/911book.pdf" target="_blank">
+                <img src="l6.png" alt="A to Z Words">
+                <p>colouring book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://socialwelfare.tripura.gov.in/sites/default/files/Activity%20Book%20for%203-4%20years%20Children.pdf" target="_blank">
+                <img src="l7.png" alt="A to Z Words">
+                <p>activity book for 3-4 year children</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://cdn.shopify.com/s/files/1/2081/8163/files/001-Farm-_Coloring-Book.pdf?v=1637302766" target="_blank">
+                <img src="l8.png" alt="A to Z Words">
+                <p>farm colour book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://cdn.shopify.com/s/files/1/2081/8163/files/002-Amphibians-Colouring-Book.pdf?v=1637308191" target="_blank">
+                <img src="l9.png" alt="A to Z Words">
+                <p>amphibians colour book</p>
+            </a>
+        </div>
+        
+        <div class="image-container">
+            <a href="https://cdn.shopify.com/s/files/1/2081/8163/files/003-Domestic-Animals-Colouring-Book.pdf?v=1638357141" target="_blank">
+                <img src="l10.png" alt="A to Z Words">
+                <p>Domestic Animals Colouring Book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://cdn.shopify.com/s/files/1/2081/8163/files/004_Birds_Colouring_Book.pdf?v=1637310696" target="_blank">
+                <img src="l11.png" alt="A to Z Words">
+                <p>birds colouring book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://cdn.shopify.com/s/files/1/2081/8163/files/006_Butterfly_Colouring_Book.pdf?v=1637316588" target="_blank">
+                <img src="l12.png" alt="A to Z Words">
+                <p>butter fly colouring book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://cdn.shopify.com/s/files/1/2081/8163/files/007_Cartoon_Characters_Colouring_Book.pdf?v=1637321612" target="_blank">
+                <img src="l13.png" alt="A to Z Words">
+                <p>Cartoon Characters Colouring Book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="a_to_z.pdf" target="_blank">
+                <img src="apple.jpg" alt="A to Z Words">
+                <p>A to Z Words for Kids</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="Kannadavar.pdf" target="_blank">
+                <img src="aa_kannada.png" alt="Kannada Letters">
+                <p>ಅ_ಳ ವರ್ಣಮಾಲಾ (Kannada Alphabets)</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://socialwelfare.tripura.gov.in/sites/default/files/Activity%20Book%20for%205-6%20years%20Children.pdf" target="_blank">
+                <img src="ac.png" alt="A to Z Words">
+                <p>Activity book</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://smartkidsindia.com/wp-content/downloads/Mentor%20Manual/LKG%20Term%20-1%20%20Manual.pdf" target="_blank">
+                <img src="L1.png" alt="A to Z Words">
+                <p>MENTOR MANUVAL FOR LKG</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://pubhtml5.com/hpzr/svrw/LKG_ACTIVITY_BOOK_SAMPLES/" target="_blank">
+                <img src="L3.png" alt="A to Z Words">
+                <p>LKG ACTIVITY</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="https://fliphtml5.com/boank/fvzi/basic" target="_blank">
+                <img src="L2.png" alt="A to Z Words">
+                <p>EARLY ENGLISH</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="LKG ACTIVITY BOOK SAMPLES.pdf" target="_blank">
+                <img src="lkg1.png" alt="A to Z Words">
+                <p>LKG WORK ACTIVITY1 BOOKS</p>
+            </a>
+        </div>
+        
+    </div>
+    <main>
+        <button onclick="goBack()">Go Back</button>
+    </main>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
